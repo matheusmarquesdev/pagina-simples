@@ -1,0 +1,242 @@
+body{
+    background:linear-gradient(90deg,rgb(254, 254, 255)30%,rgb(169, 220, 243));
+    font-family: 'Montserrat', sans-serif;
+    font-size:25px;
+   }
+
+.posicao{
+    display:flex;
+    justify-content:space-between;
+    align-items: center;
+    padding:8px 16px; 
+}
+.banner{
+    width:110px;
+
+}
+.menu_notificacao{
+   content: url(../font/notification_icon_124899.png);
+}
+.menu-lateral{
+    display: flex;
+    flex-direction: column;
+    align-items: baseline;
+    width: 40vw;
+    height: 100vh;
+    left:-100vh;
+    transition:.25s;
+    position: absolute;
+    background:linear-gradient(90deg,rgb(254, 254, 255)30%,rgb(169, 220, 243));
+}
+.menu_lateral--acesso{
+    left:0vh;
+    transition:0.25s;
+    
+}
+.menu-lateral__on{
+    color: #000000;
+    padding-left: 56px;
+    border-left: 8px solid #000000;
+}
+.menu-lateral a {
+padding:16px;
+}
+.menu-inicio::before{
+    content:url('../font/icons8-página-inicial-24.png');
+    padding:10px auto;
+    padding-right: 10px;
+
+}
+.menu-localizacao::before{
+    content:url('../font/pin-de-localizacao.png');
+    padding:10px auto;
+    padding-right: 10px;
+}
+.menu-mensalidade::before{
+    content:url('../font/dinheiro.png');
+    padding:10px auto;
+    padding-right: 10px;
+}
+.menu-imc::before{
+    content:url('../font/balancas.png');
+    padding:10px auto;
+    padding-right: 10px;
+}
+.menu-matricula::before{
+    content:url('../font/caderno.png');
+    padding:10px auto;
+    padding-right: 10px;
+}
+
+h2{
+    padding:0 0 20px 0;
+}
+.teste{
+    margin-right:60 60 60 60px;
+
+}
+.teste:active{
+    color:rgb(255, 153, 0);
+}
+.teste:hover{
+    text-decoration:underline;
+    transition:100ms;
+    cursor:pointer;
+}
+.inicio{
+    text-align:center;
+    margin-top:5%;
+    padding:1px;
+    grid-column: span 4;
+}
+.inicio h1 {
+    color:orange;
+}
+h1 + p {
+    margin:30px auto;
+    font-style:italic;
+    font-weight:bold;
+}
+
+.produtos {
+    display:grid;
+    grid-template-columns:1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    gap:40px 10px;
+    text-align: center;
+}
+.primeiro-produto{
+    grid-column: span 1;
+    grid-row: span 1;
+    border-radius: 5px;
+    box-shadow:rgb(0 0 0 / 20%) 0px 4px 8px;
+}
+.segundo-produto{
+    grid-column: span 1;
+    grid-row: span 1;
+    border-radius: 5px;
+    box-shadow:rgb(0 0 0 / 20%) 0px 4px 8px;
+}
+.terceiro-produto{
+    grid-column: span 1;
+    grid-row: span 1;
+    border-radius: 5px;
+    box-shadow:rgb(0 0 0 / 20%) 0px 4px 8px;
+}
+.quarto-produto{
+    grid-column: span 1;
+    grid-row: span 1;
+    border-radius: 5px;
+    box-shadow:rgb(0 0 0 / 20%) 0px 4px 8px;
+}
+.quinto-produto{
+    grid-column: span 1;
+    grid-row: span 1;
+    border-radius: 5px;
+    box-shadow:rgb(0 0 0 / 20%) 0px 4px 8px;
+}
+.sexto-produto{
+    grid-column: span 1;
+    grid-row: span 1;
+    border-radius: 5px;
+    box-shadow:rgb(0 0 0 / 20%) 0px 4px 8px;
+}
+.botao__compra:hover{
+    transition:.4s;
+    width:85%;
+    cursor:pointer;
+}
+.botao__compra{
+    margin-top:10px;
+    width: 80%;
+    height: 50px;
+    background:rgb(91, 180, 240);
+    box-sizing: border-box;
+    border-radius: 15px;
+
+}
+.imgs{
+    width:160px;
+    height:160px;
+}
+h2{
+    font-style: italic;
+    font-weight: bold;
+    margin-left:5px;
+}
+p{
+    font-size:20px;
+    margin-top:5px;
+}
+
+.table > h3{
+    font-weight:bold;
+    text-align:center;
+    padding:50px;
+}
+table{
+    margin:5px 0 0 25%;
+    width: 50% ;
+}
+thead{
+    
+    font-weight:bold;
+    text-transform:uppercase;
+    background:rgb(197, 184, 184);
+}
+
+td,th{
+    text-align:center;
+    padding:30px;
+    box-sizing:border-box;
+    border-style:solid;
+    border-width:3px;
+    border-radius: 10px;
+    
+}
+footer{
+    font-weight:bold;
+    text-align:center;
+    margin:auto;
+    background:linear-gradient(30deg,rgb(254, 254, 255)30%,rgb(169, 220, 243));
+    color:red;
+    padding:100px;
+}
+.dev{
+    position:relative;
+    text-align:right;
+    top:80px;
+    left:2%;
+    color: rgb(138, 138, 138);
+    font-size:10px;
+}
+.haltere{
+    width:36px;
+    height:36px;
+    align-self: center;
+    padding:16px;
+}
+@media screen and (max-width: 550px) {
+    body{
+     font-size:15px;
+     }
+     h2{
+         font-size:18px
+     }
+     p{
+         font-size:13px;
+     }
+     .paragrafo{
+        font-size:13px;
+     }
+    .banner{
+        width:60px;
+    }
+    .produtos {
+     display:grid;
+     grid-template-columns:1fr 1fr ;
+     grid-template-rows: auto;
+     gap:20px 5px;
+     text-align: center;
+ }
+}

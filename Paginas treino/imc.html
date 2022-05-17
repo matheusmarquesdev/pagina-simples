@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+	<head>
+		<meta charset="UTF-8">
+		<title>Store</title>
+		<link rel="stylesheet" type="text/css" href="css/reset.css">
+		<link rel="stylesheet" type="text/css" href="css/imc.css">
+
+	</head>
+	<body>
+
+		<header>
+			<div class="container">
+				<h1><a href="index.html">Início</a></h1>
+			</div>
+		</header>
+		<main>
+			<section class="container">
+				<h2>Calcule seu IMC</h2>
+				<table>
+					<thead>
+						<tr>
+							<th>Nome</th>
+							<th>Peso(kg)</th>
+							<th>Altura(m)</th>
+							<th>Gordura Corporal(%)</th>
+							<th>IMC</th>
+						</tr>
+					</thead>
+					<tbody id="adicionar__imc">
+					</tbody>
+                    
+				</table>
+
+
+			</section>
+		</main>
+
+		<section class="container">
+		    <h2 id="titulo-form">Adicione seu registro</h2>
+			<ul id="mensagens-erro"></ul>
+		    <form id="formulario-in">
+		        <div class="">
+		            <label for="nome">Nome:</label>
+		            <input id="nome" name="nome" type="text" placeholder="digite o seu nome" class="campo">
+		        </div>
+		        <div class="grupo">
+		            <label for="peso">Peso:</label>
+		            <input id="peso" name="peso" type="text" placeholder="digite o seu peso" class="campo campo-medio">
+		        </div>
+		        <div class="grupo">
+		            <label for="altura">Altura:</label>
+		            <input id="altura" name="altura" type="text" placeholder="digite a sua altura" class="campo campo-medio">
+		        </div>
+		        <div class="grupo">
+		            <label for="gordura">% de Gordura:</label>
+		            <input id="gordura" type="text" placeholder="digite a sua porcentagem de gordura" class="campo campo-medio">
+		        </div>
+
+		        <button id="adicionar-calculo" class="botao bto-principal">Adicionar</button>
+		    </form>
+		</section>
+        <script src="imc.js"></script>
+        </body>
+        </html>

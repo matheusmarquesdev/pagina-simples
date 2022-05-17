@@ -1,0 +1,88 @@
+body{
+    background:linear-gradient(90deg,rgb(254, 254, 255)30%,rgb(169, 220, 243));
+    font-family: 'Montserrat', sans-serif;
+    font-size:25px;
+   }
+.cabecalho{
+    display:flex;
+    justify-content:space-evenly;
+    align-items: center;
+}
+main{
+    background-image: url(../font/academia.png);
+    background-repeat: no-repeat;
+}
+.banner{
+    width:110px;
+}
+.text{
+    text-align:center;
+    font-size: 30px;
+    font-weight: bold;
+    margin:50px auto;
+}
+form {
+margin-top: 30px;
+display:flex;
+flex-direction:column;
+align-items:flex-start ;
+}
+
+
+form label{
+	display:block;
+	font-size:20px;
+    }
+legend{
+    display:block;
+	font-size:20px;
+    padding:20px auto;
+}
+input,textarea{
+    align-items:center;
+    padding:10px;
+    width:30%;
+    display:block;
+	margin:10px 0;
+	padding:5px;
+	border-radius: 5px;
+	border-style:double;
+	border-width: 2px;
+}
+footer{
+    font-weight:bold;
+    text-align:center;
+    margin:auto;
+    background:linear-gradient(30deg,rgb(254, 254, 255)30%,rgb(169, 220, 243));
+    color:red;
+    padding:100px;
+}
+.dev{
+    position:relative;
+    text-align:right;
+    top:80px;
+    left:2%;
+    color: rgb(138, 138, 138);
+    font-size:10px;
+}
+.opcao-objetivo{
+    margin: 10px 0;
+    font-size:23px;
+}
+.selecao--objetivo{
+    margin: 10px 0;
+    border: 2px dotted;
+}
+.formulario-posicao{
+    display:flex;
+    align-items: center;
+}
+@media screen and (max-width:768px){
+main{
+    background-image: none;
+}
+input,textarea{
+    width:80vw;
+}
+}
+    
